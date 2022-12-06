@@ -1,0 +1,12 @@
+body{
+    background-color: brown;
+
+}
+.para{
+    border: 9px;
+    border-width: 5px;
+    border-style: solid dotted double solid;
+    border-color: black;
+    height: 200px;
+    width: 900px;
+}

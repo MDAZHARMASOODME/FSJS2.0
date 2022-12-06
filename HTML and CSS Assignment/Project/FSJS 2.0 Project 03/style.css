@@ -1,0 +1,263 @@
+/* You can not modify anything from the HTML file */
+/* You can only modify the CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    height: 100vh;
+    background-color: #ffffff;
+    padding: 50px 50px 40px 40px;
+}
+/* section{
+    display: grid;
+    grid-template-columns: 1000px 800px 600px;
+} */
+.navbar-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items:center;
+    /* box-shadow: 0px 5px 0px #dedede; */
+
+}
+.navbar-container img{
+    height: 30px;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    list-style-type: none;
+    font-family: "Orbitron";
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+
+svg{
+    height:20px;
+    position: absolute;
+    right: 310px;
+    top: 60px;
+}
+
+.nav-button{
+   
+    border: 2px solid black;
+    padding: 5px 40px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    border-radius:10px;
+    
+    /* text font  */
+    font-family: "Poppins";
+    font-weight: light 300;
+    font-size: 22px;
+    color: #0D0D0D;
+    opacity: 80%;
+}
+
+
+
+
+.hero-container{
+    display:flex;
+    flex-shrink: 1;
+    flex-flow: row wrap;
+    height: 100vh;
+
+}
+.square {
+    
+    display: flex;
+    height: 100vh;
+    width: 58vh;
+    justify-content: flex-end;
+    align-items: center;
+
+    
+
+}
+.square img{
+    display: inline;
+    height:40%;
+    float:right 60px;
+    position:absolute;
+    z-index: -1;
+
+}
+.star{
+    display: flex;
+    height:70vh;
+    width:10vh;
+    align-items: flex-end;
+}
+.star img{
+    display: inline;
+    height:40px;
+}
+/* star  */
+.star:nth-child(2) {
+    display: flex;
+    width: 200vh;
+    height: 10vh;
+    /* align-items: flex-start; */
+    /* align-content: flex-start; */
+    /* flex-wrap: nowrap; */
+    /* align-self: self-end; */
+    justify-content: flex-end;
+    position: absolute;
+
+
+
+}
+/* .hero-container span + div img :nth-child(2){
+    height: 50px;
+} */
+.hero-container div img{
+    height: 325px;
+}
+
+.globe{
+    display: flex;
+    flex-direction: row;
+    width: 352px;
+    height: 50px;
+    justify-content: center;
+    position: relative
+
+}
+.hero-container  :nth-child(5){
+   
+    position: absolute;
+    height: 50%;
+    left: 40px;
+    margin: 61px;
+    
+
+
+}
+
+/* span.square img{
+    display: inline;
+    margin: 153px 0px 0px 87px;
+    padding-top: 30px;
+    height: 300px;
+    z-index: -1;
+    position: absolute;
+}
+span.star{
+    display:inline;
+    margin: 206px  ;
+    padding-top: 30px;
+    position: relative;
+}
+span.globe{
+   display:inline;
+   
+   height: 80px;
+   right:800px;
+   bottom:450px;
+   position: absolute;
+   margin-top: 0;
+} */
+/*  second part   */
+
+.hero-heading{
+    display: flex;
+    flex-direction: row;
+    font-family: "Orbitron";
+    font-size: 40px;
+    justify-content: flex-end;
+    position: absolute;
+    left: 600px;
+    top: 202px;
+}
+.hero-description{
+    display: flex;
+    /* flex-flow: row wrap; */
+    font-family: "poppins";
+    font-size: 12px;
+    color: #CAD5E2;
+    /* justify-content: flex-start; */
+    position: absolute;
+    left: 600px;
+    top: 300px;
+
+}
+ p{
+    margin: 0 auto;
+  max-width: 600px;
+  text-align: center;
+}
+button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: "orbitron";
+    font-size: 20px;
+    font-weight: 400;
+    right: 120px;
+    
+}
+button.button-join{
+    background-color: #0D0D0D;
+    color: #fff;
+    position: relative;
+    top: 300px;
+    
+    
+}
+h4{display: flex;
+    text-align: center ;
+}
+.contact-heading{
+    font-size: 20px;
+    font-family: "poppins";
+    font-weight: 300;
+    position: absolute;
+    width: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end
+    
+}
+button.button-email{
+    background-color: #fff;
+    color: #0D0D0D;
+    position: relative;
+    top: 300px;
+    padding: 5px 20px;
+    
+}
+/* targeting   button */
+.hero-container-right {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 3;
+    height: 60vh;
+}
+.icons > span img{
+    height: 40px;
+    
+    /* transform: scale(); */
+    /* transform-origin: top left */
+}
+
+.icons{
+    display: flex;
+    height: 22vh;
+    width: 30vh;
+    /* flex-direction: row; */
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: absolute;
+}

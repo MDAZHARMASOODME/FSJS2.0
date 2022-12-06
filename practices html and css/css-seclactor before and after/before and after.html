@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before||After</title>
+</head>
+<style>
+    body{
+        background-color: #454545;
+        color: thistle;
+    }
+    .imp-label:hover::after{
+        content: '';
+        display: block;
+        width: 20px;    
+        height: 20px;
+        border-radius: 10px;
+        background-color: crimson;
+
+    }
+    .imp-label2:hover:before{
+        content: '';
+        display: block;
+        width: 20px;    
+        height: 20px;
+        border-radius: 10px;
+        background-color: rgb(109, 226, 13);
+
+    }
+    
+</style>
+<body>
+    <div class="form-control">
+        <form action="" method="post">
+            <label class="imp-label"  for="">NAME</label>
+            <input type="text" name="name" >
+
+            <label class="imp-label2"  for="email">email</label>
+            <input type="email" name="email "> 
+            <input data-tooltip ="Tooltip "  type="button" value="submit">
+        </form>
+    </div>
+</body>
+</html>   

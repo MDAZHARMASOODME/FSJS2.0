@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CSS||AXM</title>
+    <style>
+        /* universal  seclector  */
+       * {
+            background-color: #DE4839;
+            color: #ffffff;
+        }
+        /* individual seclector */
+        p{
+           background-color: #686868;
+           color: #ffffff;
+        
+        }
+        /* class and id seclector */
+        .div-1{
+            background-color: #ef9325;
+            color: azure;
+        }
+        /* id */
+        #para-1{
+            background-color: #efefef;
+            color: #e93916;
+        }
+      /* and seclector (chained classes )*/
+      
+       li.bg-blue.text-white{
+        background-color: rgb(0, 22, 94);
+        color: #f1f1f1;
+
+       }
+       /* combined seclator */
+       p,span{
+        background-color:  rebeccapurple;}
+        /* inside element */
+        div ul li {
+            background-color: #000000;
+        }
+        /* direct -child seclector */
+        div>li{
+            background-color: rgb(60, 248, 60);
+            color: blue;
+          
+        }
+    
+        /* sibling */
+        .sibling+p{background-color: lightyellow;
+            color:#686868 ;
+        }
+        /* sibling */
+        .sibling+li{
+           background-color: lightyellow;
+            color:#686868 ;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div  class="div-1">   welcome to class live   </div>
+    <span > span is nothing ,it just line of code mean in-line , it doesnt take any space </span>
+    <p id="para-1"> we know already what is paragraph </p>
+    <ul>
+        <li class ="bg-blue text-white" > AXM </li>
+        <li class="sibling">AXM  2</li>
+        <li>AXM 3</li>
+        <li>AXM 4</li>
+        <li>AXM 5</li>
+    </ul>
+    <div>   
+        <p>lorem</p>
+      <li>awesome</li>
+      <ul>
+        <li>highlight me <a id="para-1" href="#">Test</a></li>
+        <li>higlisht me</li>
+        
+      </ul>
+    </div>
+    <section>
+       <p class="sibling"> Test 1</p>
+       <p>Test 2</p>
+       <p>Test 3</p>
+       <p>Test 4</p>
+
+    </section>
+</html>
