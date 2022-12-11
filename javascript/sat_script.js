@@ -28,7 +28,7 @@ let xyz = 20;
 console.log( abc>xyz);
 console.log( xyz>abc);
 console.log(xyz>=abc);
-console.log(xyz<=abc)
+console.log(xyz<=abc);
 
 
 
