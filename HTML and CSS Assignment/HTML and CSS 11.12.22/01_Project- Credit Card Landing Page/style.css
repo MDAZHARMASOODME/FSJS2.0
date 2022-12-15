@@ -592,3 +592,134 @@ li{
 
 
 }
+.img-1{
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    right:0;
+    opacity:0.9;
+    /* z-0 absolute left-0 right-0 opacity-40 */
+
+}
+.img-2{
+    z-index: 0;
+    position: absolute;
+    left: 0;
+    right:0;
+/* 
+    z-0  absolute left-0 right-0 */
+}
+
+.daim{
+    display: flex;
+    justify-content:space-between;
+    height:100vh ;
+    width: 100%;
+    /* flex flex-row  justify-center h-[20vh]w-[100%]  */
+
+}
+
+.daim-1-img-1{
+    z-index:1;
+    height:80vh;
+    position: absolute;
+    left:0;
+    right:0;
+    /* z-10 absolute left-0 right-0  h-[80%] */
+}
+.daim-1-img-2{
+    z-index:1;
+    position: absolute;
+    right: 0;
+    height: 80vh;
+    /* z-10 absolute right-0 h-[80%] */
+   
+
+}
+.base{
+    position: absolute;
+    padding-top:112px;
+    height:20vh;
+    width: 60%;
+    line-height: 2;
+    /* absolute pt-28 h-20vh  w-[60%] */
+    
+   
+    /* absolute  h-20vh  w-[60%] */
+}
+.base h1{
+    z-index:2;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    
+    /* z-20  text-6xl font-normal  text-center text-[#ffff] leading-loose */
+  
+ 
+    
+
+}
+
+
+.base span{
+    color: #0D0D0D;
+    font-weight: 700;
+    font-size: 60px;
+    color: #0D0D0D;
+    font-weight: 600;
+    /* text-6xl text-black font-bold */
+}
+
+.button-pink{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    margin-top:128px ;
+    height: 100vh;
+    width: 40%;
+    position: absolute;
+    color: #fff;
+    font-weight: 500;
+    /* flex justify-center  items-center  z-30 mt-28   h-[100vh] w-[40%] absolute text-[#fff]  font-bold */
+}
+.buttton-pink img{
+    position: relative;
+    left: 20px;
+    opacity: 0.7;
+    /* relative left-[20px] opacity-70 */
+    /* relative left-[20px] opacity-70  */
+}
+ 
+
+
+
+
+
+
+
+
+footer{
+    height: 20vh;
+    width: 100%;
+    background: #0D0D0D;
+    margin-right: 20px;
+    /* h-[40vh] w-[100%] bg-[#0D0D0D] */
+}
+.footer-main{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    position: absolute;
+    left:0;
+    right: 0;
+    margin-top: 20px;
+    width: 70%;
+    font-size:80%;
+
+    /* flex justify-evenly items-end  absolute left-0  mt-20 w-[80%] text-sm */
+}
+.footer-main img{
+    height: 40px
+}
