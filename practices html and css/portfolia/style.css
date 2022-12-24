@@ -1,0 +1,145 @@
+/* reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* set font and color for entire document */
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* header styles */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+    height: 200px;
+  }
+  
+  header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  header h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+  }
+  
+  /* navigation menu styles */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #ccc;
+  }
+  
+  /* main content styles */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* section styles */
+  section {
+    margin: 20px 0;
+  }
+  
+  /* footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  /* add a background image to the header */
+header {
+    background-image: url('./Assest/314711708_653336299601214_1070798783913848536_n-removebg-preview.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* create a parallax effect for the header */
+  header {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+  }
+  
+  /* add a transparent overlay over the background image */
+  header:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  /* center the header content vertically */
+  header h1,
+  header h2 {
+    position: relative;
+    z-index: 1;
+  }
+  h1 {
+    /* add your desired font styles here */
+    font-size: 60px;
+    font-weight: bold;
+    color: rgb(235, 224, 224);
+    
+    /* add the animation */
+    animation: fadeIn 2s;
+  }
+  
+  /* create the fade in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  
+  /* responsive styles */
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+    }
+    nav li {
+      margin: 10px 0;
+    }
+  }
+  

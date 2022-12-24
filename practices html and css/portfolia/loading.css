@@ -1,0 +1,68 @@
+/* set the background image and styles */
+/* add the black hole image as the background */
+body {
+    background-image: url('./Assest/download.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* create the black hole distortion effect */
+  body {
+    filter: perspective(1000px) rotateY(-5deg) rotateX(-5deg);
+  }
+  
+  /* add a transparent overlay to make the text more readable */
+  body:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* style the text */
+  body {
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  /* center the container and add some padding */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* style the moon image */
+  .moon {
+    width: 10px;
+    height: 50px;
+  }
+  
+  /* add the falling animation to the moon */
+  .moon {
+    animation: fall 2s linear infinite;
+  }
+  
+
+/* create the falling animation */
+@keyframes fall {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(100%);
+    }
+  }
+  
+  /* style the loading text */
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 20px;
+  }  
