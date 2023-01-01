@@ -52,6 +52,9 @@ blockquote{
     text-align: center;
 
 }
+.img{
+    position: relative;
+}
 .container{
     max-width: 1180px;
     margin-inline: auto;
@@ -195,9 +198,7 @@ transition-duration: 150ms;
 }
 .context-center h2{
     font-size: 2em;
-    
-   
-   
+ 
 }
 .context-para p{
     font-size: 0.99em;
@@ -216,7 +217,6 @@ transition-duration: 150ms;
     line-height: 0.8;
     padding: 5px 30px;
     text-align: center;
-   
 
 }
 
@@ -378,7 +378,7 @@ transition-duration: 150ms;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     border-bottom: #757474;
     
 }
@@ -575,4 +575,210 @@ h5{
 
 
 
- 
+  @media all and (max-width: 768px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-wrap: hidden;
+      
+    }
+    
+    h1{
+        font-size: 30px;
+        line-height: 2.5rem;
+    }
+    
+    li{
+        display: none;
+    }
+    .hero-main{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        
+        align-items: flex-start;
+        
+    }
+    .hero-main{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+        background: linear-gradient(180deg, rgba(255,255,255,1) 10%, rgb(203, 224, 248) 100%);
+        
+    
+    }
+    .hero-left{
+        display: inline-flex;
+        height: 100vh;
+        width: 100%;
+        cursor: pointer;
+       
+       
+    }
+    .hero-right{
+        display: none;
+    }
+    .ver-1{
+        width: 100%;
+    }
+    .hero-context{
+        height: 12vh;
+    }
+    .context-center h2{
+        font-size: 1.5rem;
+
+    }
+    .context-center p{
+      display: none;
+
+    }
+    .launch-main{
+        flex-direction: column;
+    }
+    .ver-2{
+        width: 80%;
+        color: var(--primary-text-color);
+        padding: 5px ;
+    }
+
+
+    .step{
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 0.6em;
+        width: 100%;
+        text-align: center;
+        height: 100%;
+        cursor: pointer;
+        box-shadow: 0 10px 15px -3px rgba(8, 230, 230, 0.1), 0 4px 6px -4px rgba(18, 19, 19, 0.952);
+        
+       
+    
+    }
+    .exp-step{
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+       
+    }
+    .exp-para {
+        width: 100%;
+        line-height: 1.rem;
+    }
+    .exp-heading h3{
+     font-size: 15px;
+     font-weight: 700;
+    
+    }
+    .exp-img img{
+        height: 10vh;
+    }
+    .launch-left{
+        height: 50vh;
+        width: 100%;
+    }
+    .launch-left svg{
+        height: 40vh;
+        position: relative;
+        right: 20px;
+
+    }
+    .launch-right{
+        height: 50vh;
+        width: 100%;
+    }
+    .pipeline{
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+    }
+    .profile{
+        
+            
+            background: linear-gradient(-35deg, #8c1be9, #e73c7e, #23a6d5, #23d5ab);
+            
+            
+            animation: gradient 16s ease infinite;
+         
+            
+       
+    }
+    .profile-main-heading{
+        width: 90%;
+    }
+    .profile-logo{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .profile-main-heading{
+        width: 100%;
+        text-align: center;
+    }
+    .trust {
+        flex-direction: column;
+        align-items: center;
+    }
+    .trust-left {
+        width: 100%;
+        height: 50vh;
+    }
+    .trust-left h2{
+        font-size: 1rem;
+    }
+    .trust-right{
+        width: 100%;
+        height: 50vh;
+        align-items: center;
+    }
+    footer{
+        height: 50vh;
+    }
+    .footer-grid{
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        
+       
+    }
+    .brand-info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 40vh;
+        width: 60%;
+    }
+    .brand-info p{
+        display: none;
+    }
+    .brand-info>img{
+        height: 2vh;
+
+    }
+    .product{
+        display: none;
+    }
+    .Company {
+        display: none;
+
+    }
+    .support {
+        display: none;
+
+    }
+    .for-devloper{
+        display: none;
+    }
+    .new{
+
+    }
+  }
