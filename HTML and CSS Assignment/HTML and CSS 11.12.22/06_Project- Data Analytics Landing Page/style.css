@@ -711,10 +711,11 @@ h5{
        
     }
     .profile-main-heading{
-        width: 90%;
+        width: 100%;
     }
     .profile-logo{
         display: grid;
+        height: 40vh;
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     .profile-main-heading{
@@ -722,8 +723,11 @@ h5{
         text-align: center;
     }
     .trust {
+        display: flex;
         flex-direction: column;
         align-items: center;
+        height: 100vh;
+        justify-content: space-between;
     }
     .trust-left {
         width: 100%;
@@ -736,6 +740,10 @@ h5{
         width: 100%;
         height: 50vh;
         align-items: center;
+    }
+    .profile-logo>img{
+        height: 50px;
+
     }
     footer{
         height: 50vh;
@@ -778,7 +786,5 @@ h5{
     .for-devloper{
         display: none;
     }
-    .new{
-
-    }
+   
   }
