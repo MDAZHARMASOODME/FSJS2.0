@@ -1,0 +1,174 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px */
+
+/* ## Colors
+
+### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 16px
+
+### Font
+
+- Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display) */
+/* - Weights: 500, 700, 900 */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    font-size: 16px;
+     color:hsl(224, 23%, 55%)
+}
+body{
+    background-color:hsl(224, 23%, 55%);
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100%;
+    padding-top: 2.5rem;
+
+}
+.box{
+    display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  gap: 30px;
+  height: 98vh;
+  width: 27%;
+  border-radius: 20px;
+  border: 2px solid transparent;
+  background-color: #fff;
+  padding-bottom: 10px;
+}
+.box-img{
+    height: 30vh;
+    border-top: 2.0rem;
+    
+}
+.hero-img{
+    height: 100%;
+    width: 100%;
+    object-fit:fill;
+    
+    position: relative;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+   
+
+  
+}
+.plan{
+    display: inline-flex;
+    width: 90%;
+    height: 15vh;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    background-color:hsl(225, 100%, 98%) ;
+    cursor: pointer;
+    padding: 20px auto;
+
+}
+h4:last-child{
+    color:hsl(224, 23%, 55%) ;
+    
+}
+p:nth-child(2):hover{
+    color:hsl(224, 27%, 51%);
+    font-weight: 800;
+    
+}
+p:nth-child(3) :hover{
+    color:hsl(224, 27%, 51%);
+    font-weight: 800;
+
+}
+h1{
+    color:hsl(223, 47%, 23%) ;
+    font-weight: 800;
+}
+
+.price{
+    display: inline-flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.btn{
+    padding: 5px 100px;
+    border-radius: 10px;
+    border:  1em solid transparent;
+    background-color: #fff;
+    color: black;
+}
+.btn:hover{
+   background-color:  hsl(261, 89%, 56%);
+   color: #fff;
+   box-shadow: 0px 15px 11px -4px rgba(0,0,0,0.75);
+}
+.para{
+    width: 80%;
+    text-align: center;
+
+
+}
+.btn-2{
+    display: inline-flex;
+    width: 100%;
+    text-align: center;
+}
+/* Mobile styles */
+@media (max-width: 375px) {
+    .box {
+        height: 80vh;
+        
+    width: 80%;
+    }
+    .btn{
+        padding: 5px 30px;
+     }
+    }
+    
+    /* Tablet and desktop styles */
+    @media (min-width: 768px) {
+    .box {
+    width: 45%;
+    }
+    .btn{
+       padding: 5px 50px;
+    }
+    }
+    
+    /* Desktop styles */
+    @media (min-width: 1024px) {
+    .box {
+    width: 27%;
+    }
+    }
