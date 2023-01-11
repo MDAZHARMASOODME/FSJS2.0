@@ -164,11 +164,53 @@ h1{
     .btn{
        padding: 5px 50px;
     }
+    .box-img{
+        height: 30vh;
+        width: 100%;
+        border-top: 2.0rem;
+        
+    }
+    .hero-img{
+        height: 100%;
+        width: 100%;
+        object-fit:fill;
+        
+        position: relative;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+       
+    
+      
+    }
+    .btn{
+        padding: 5px 100px;
+        border-radius: 10px;
+        border:  1em solid transparent;
+        background-color: #fff;
+        color:
     }
     
     /* Desktop styles */
-    @media (min-width: 1024px) {
+    @media (min-width: 1024px) and (max-width: 1280px ){
     .box {
-    width: 27%;
+    width: 40%;
+    }.box-img{
+        height: 30vh;
+        width: 100%;
+        border-top: 2.0rem;
+        
     }
+    .hero-img{
+        height: 100%;
+        width: 100%;
+        object-fit:fill;
+        
+        position: relative;
+        top: -38px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+       
+    
+      
     }
+}
